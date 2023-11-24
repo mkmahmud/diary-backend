@@ -1,3 +1,9 @@
+
+/node_modules
+.dotenv
+.eslintrc.json
+.prettier.json
+
 # Logs
 logs
 *.log
