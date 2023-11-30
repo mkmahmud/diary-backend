@@ -27,7 +27,7 @@ const auth =
       // verify token
       let verifiedUser: JwtPayload | null = null // Specify the type here
 
-      verifiedUser = jwtHelpers.verifiedTocken(
+      verifiedUser = jwtHelpers.verifyToken(
         token,
         config.JWT_SECRET as Secret,
       ) as JwtPayload // Type assertion

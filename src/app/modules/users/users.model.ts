@@ -5,6 +5,10 @@ import bcrypt from 'bcrypt'
 // User Modal
 const usersSchema = new Schema<IUsers, UsersModel>(
   {
+    fullName: {
+      type: String,
+      required: true,
+    },
     userId: {
       type: String,
       required: true,

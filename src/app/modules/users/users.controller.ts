@@ -6,8 +6,8 @@ import httpStatus from 'http-status'
 
 // Create Student
 const createUser = catchAsync(async (req: Request, res: Response) => {
-  const { user } = req.body
-  const result = await usersService.createUser(user)
+  const body = req.body
+  const result = await usersService.createUser(body)
 
   // Send response
   sendResponse(res, {

@@ -1,6 +1,7 @@
 import { Model } from 'mongoose'
 
 export interface IUsers {
+  fullName: string
   userId: string
   email: string
   password: string
